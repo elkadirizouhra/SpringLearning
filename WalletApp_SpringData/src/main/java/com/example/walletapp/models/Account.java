@@ -1,9 +1,11 @@
 package com.example.walletapp.models;
 
+import org.springframework.data.annotation.Id;
+
 import java.math.BigDecimal;
 
 public class Account {
-
+    @Id
     private int id;
     private String name;
     private BigDecimal amount;
